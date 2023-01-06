@@ -1,0 +1,103 @@
+# 주석 = 메모
+
+
+# 변수 = 상자
+# a = 3
+# b = 4 - 7
+# c = a + b
+
+# a = 4
+# a = a + 1_# a +=1
+# 계산
+# + ,- , / , *
+# % : 나머지 연산자
+# // : 몫연산자
+# ** : 제곱연산자
+
+# 출력
+
+
+# 출력함수 print
+# print ( 출력할 내용 )
+
+# print(123)
+# print(8 + 9)
+# a = 7
+# print(a)
+# print(a * 2)
+#
+# print(5 / 2)
+# print(5 % 2)
+# print(5 // 2)
+#
+# print(4 ** 2)
+# print(10 ** 9)
+
+# 문자열 : "" , '' 로 표현
+# print("hello")
+# welcome = "python!"
+# print(welcome)
+
+# 문자열 계산
+
+# a = "abcd"
+# b = "efg"
+# c = a + b
+# print(a + b)
+# print(c)
+
+
+# 문자열과 정수형의 계산
+# print("hello" * 10)
+
+
+# 자료형
+
+# 정수형 : int
+# 실수형 : float
+# 문자열 : str # string
+# bool : bool
+
+# 자료형을 알려주는 함수
+# type (값)
+
+# print(type(17))
+# print(type(3.1))
+# print(type("hello"))
+# print(type(True))
+
+
+# 문제
+# 변구 a,b를 만든다
+# a에는 3을, b에는 10을 저장한다
+# a와 b의 값을 서로 바꾸는 코드 작성
+# 주의 : 계산 사용 금지
+
+# a = 3
+# b = 10
+# c = a
+# d = b
+
+# a = d
+# b = c
+
+# print(a , b)
+
+
+# 문제
+# a, b, c 변수 만들기
+# a 는 3, b 는 6, c 는 9 를 저장
+# a = 9, b = 3, c = 6
+# 직접계산 0, 저번문제 참고
+
+# a = 3
+# b = 6
+# c = 9
+# d = b
+# b = a
+# a = c
+# c = d
+
+# print(a , b , c)
+
+
