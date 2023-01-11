@@ -1,0 +1,152 @@
+#문자열-인덱싱,슬라이싱
+
+#a = "hello"
+#a = "01234"식으로 인식
+
+#str_test = "hello python!"
+#인덱싱 - 단일대상
+
+#print(str_test[4])
+
+#print(str_test[20]) - 범위를 벗어날시 에러 발생(따라서 조심할 것)
+
+
+# 슬라이싱 - 일정 범위
+#
+# print(str_test[2:8]) # 2 이상 8 미만(2~7)
+#
+# print(str_test[:5]) # "0부터" 는 생략 가능
+#
+# print(str_test[6:]) # "맨 끝까지"는 생략가능
+#
+# print(str_test[2:10:2]) # 세번째 숮자를 이용해서 n칸만큼 뛰어서 슬라이싱이 가능함
+#
+# print(str_test[:9:3]) # 마찬가지로 생략가능
+#
+# print(str_test[1::5]) # 마찬가지로 생략가능
+#
+# print(str_test[::]) # 둘다 생략가능
+#
+# 음수좌표 표현
+# print(str_test[-1]) # ! 출력
+#
+# print(str_test[::-1]) # 문자열 뒤집힘
+
+
+# 문자열  welcome to mython? 을 선언
+#o를 a로 m을 o로 , ?를 !로 바꾸는 프로그램 작성
+
+#실행 예) welcame to python!
+
+# str_test = "welcome to mython?"
+# print(str_test[:4] + "a" + str_test[5:11] + "p" + str_test[12:17] + "!")
+#16
+
+#입력 함수 input
+#input()
+
+# a = input()
+#print(a)
+
+# a2 = input("enter value : ")
+# print("entered value is" + a2 + "...")
+
+#input and 자료형
+# test = input() # str으로 값을 입력받음
+# print(test, type(test))
+#
+# test = int(input()) # int으로 값을 입력받음
+# print(test, type(test))
+
+#제어문 - 조건문, 반복문
+
+#조건문 - if, else, elif
+
+#조건 연산자
+#> < >= <=
+#== : 서로같다
+#!= : 서로 다르다
+#and : 연결되어있는 두 조건이 모두 참일때만 참
+#or : 연결되어잇는 두 조건중 하나라도 참이면 참
+#not : 참값 반전
+
+
+#조건문 - if, else, elif
+
+# if 조건:
+#     실행코드
+
+# a = 2
+# if a > 3 and a == 2: # 거짓 and 참 - 따라서 작동 X (or 넣으면 작동)
+#     print(a + 3)
+# print(a - 2)
+
+
+# a = 13
+# if a + 2 == 13 or a - 2 > 20== 0:
+#     print("T")
+# else:
+#     print("no")
+
+
+
+# inputed = int(input())
+# if ( inputed > 10 and inputed * 2 < 100 ) or inputed == 13:
+#     inputed = inputed + 2
+#     print("T", inputed)
+# elif inputed == 1000:
+#     print("T2")
+# print("F")
+
+
+
+#if독립문 -> 혼자 사용가능
+#else, elif 종속문 -> if가 존재할때만 사용가능
+
+
+
+#if조건:
+#실행코드
+
+#if조건:
+#실행코드
+#else:
+#실행코드
+
+#if조건:
+#실행코드
+#elif:
+#실행코드
+
+#if조건:
+#실행코드
+#elif:
+#실행코드
+#else:
+#실행코드
+
+#if조건:
+#실행코드
+#elif조건:
+#실행코드
+#elif조건:
+#실행코드
+#elif조건:
+#실행코드
+#..
+#...
+#....
+
+#if조건:
+#실행코드
+#elif조건:
+#실행코드
+#elif조건:
+#실행코드
+#elif조건:
+#실행코드
+#..
+#...
+#....
+#else
+#실행코드
