@@ -1,0 +1,104 @@
+# a = int(input())
+#
+# if a > 10:
+#     print(a * 3)
+#     if a * 2 <= 50:
+#         print("a")
+#         if a == 25:
+#             if a * 4 == 100:
+#                 print("T")
+#             else:
+#                 print("F")
+#         elif a == 26:
+#             print("0")
+# else:
+#     print(a-10)
+# a =7
+#
+# if a >6:
+#     print(1)
+# elif a >5:
+#     print(2)
+# if a >4:
+#     print(3)
+# elif a >3:
+#     print(4)
+
+# a = int(input())
+#
+# if a >89:
+#     print("A")
+# elif a >79:
+#     print("B")
+# elif a >69:
+#     print("C")
+# elif a >59:
+#     print("D")
+# else:
+#     print("F")
+
+# a =int(input())    #1
+# b =int(input())
+#
+# if a >b:
+#     print(">")
+# elif a <b:
+#     print("<")
+# else:
+#     print("=")
+
+# a =int(input())                         #3
+# b = a %100
+# if (a %4 ==0 and b >0) or a %400 == 0:
+#     print("1")
+# else:
+#     print("0")
+
+
+# x =int(input())
+# y =int(input())
+
+# if x >0 and y >0:     # 4
+#     print(1)
+# elif x <0 and y >0:
+#     print(2)
+# elif x <0 and y <0:
+#     print(3)
+# else:
+#     print(4)
+
+
+# H =int(input())   #5
+# M =int(input())
+#
+#
+# M =H *60 +M
+# M = M -45
+#
+# print(M //60 ,M %60)
+
+
+# a =int(input())       #6
+# b =int(input())
+# c =int(input())
+#
+# b =b +c +a *60
+# print(b //60 ,b %60)
+
+
+a =int(input())
+b =int(input())
+c = int(input())
+
+if a ==b ==c:
+    print(10000 +a *1000)
+
+if a ==b <c:
+    print (1000 +a *100)
+elif a ==c <b:
+    print(1000 +a *100)
+elif b ==c <a:
+    print(1000 +b *100)
+
+else:
+    print(max(a ,b ,c) *100)
