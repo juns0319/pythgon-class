@@ -1,0 +1,103 @@
+#반복문
+# for ,while
+
+#for문
+
+#for 변수이름 in range(반복횟수):
+#    반복할 코드
+#    ~
+#    ~
+#    ~
+
+
+#for i in range(10):
+#   print("hello")
+
+#for문에서 (i)의 역활
+
+# for i in range(10):
+#     print(i)
+
+
+#for j in range(3 ,7):             # 3부터 시작  7 -1까지
+#    print(j)
+
+
+#for i in range(2 ,20 ,3):      #3씩 증가
+#    print(i)
+
+
+
+
+
+#while문
+
+
+#while 조건:
+#    반복코드
+#    ~
+#    ~
+#    ~
+
+
+#a =0
+
+
+#while a <= 10:
+#    print(a)
+#    a +=1
+
+#반복문 특수 함수
+#break : 반복문 탈출 함수
+#cintinue : 반복문 건너뛰기 함수
+
+#for i in range(10):
+#    print(i)
+#    if i ==4:
+#        break
+
+
+# for i in range(10):
+#     if i ==4:
+#     print(i)
+#         continue
+
+#a =0
+
+#무한반복
+# while True:
+#     print("hello")
+#     a +=1
+#     if a >100:
+#         break
+
+# 1 .홀짝 판별문제
+# 2 .소수 판별문제
+
+
+# a =int(input())
+# a = a %2
+# if a >0:
+#     print("N")
+# else:
+#     print("Y")
+
+# a =int(input())
+# b =1
+# flag =0
+# while True:
+#     if a %b ==0:
+#        flag =1
+#     b += 1
+#     if a ==b:
+#         break
+# if flag ==1:
+#     print("N")
+# else:
+#     print("Y")
+
+string =int(input())
+
+for i in range(string):
+    print("*" *i)
+    i +=1
