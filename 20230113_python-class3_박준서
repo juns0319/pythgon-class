@@ -90,15 +90,15 @@ a =int(input())
 b =int(input())
 c = int(input())
 
-if a ==b ==c:
+if a >6 or b >6 or c >6:
+    print("Start again")
+elif a ==b ==c:
     print(10000 +a *1000)
-
-if a ==b <c:
+elif a ==b <c:
     print (1000 +a *100)
 elif a ==c <b:
     print(1000 +a *100)
 elif b ==c <a:
     print(1000 +b *100)
-
 else:
     print(max(a ,b ,c) *100)
