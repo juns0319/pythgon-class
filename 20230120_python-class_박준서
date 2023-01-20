@@ -1,0 +1,110 @@
+# 2번
+
+# a =int(input())
+# b =1
+
+
+
+# for i in range(a):
+#     print(" " *(a -b) ,"*" *b)
+#     b += 1
+
+# 3번
+
+# a =int(input())
+# b =1
+
+# for j in range(a):
+#     print("*" *(a -b))
+#     b +=1
+
+# 4번
+
+# a =int(input())
+# b =0
+
+#for o in range(a):
+#    print(" " *b ,"*" *(a -b))
+#    b +=1
+
+# 5번
+
+# a =int(input())
+# b =a *2
+# c =1
+# d =1
+#
+# for p in range(a):
+#     print(" " *(b -(d -1)) ,"*" *(c))
+#     c +=2
+#     d +=1
+
+# 6번
+
+# a =int(input())
+# b =a *2 -1
+# c =1
+#
+# for q in range(a):
+#     print(" " *(c -1) ,"*" *b)
+#     c +=1
+#     b -=2
+
+# 번외
+
+# a =int(input())
+# b =a *2
+# c =1
+# d =1
+#
+# for w in range(a):
+#     print(" " *(c -1) ,"*" *d)
+#     c +=1
+#     d +=1
+
+# 7번
+
+# a =int(input())
+# b =1
+# c =1
+# d =a *2
+#
+# for p in range(a):
+#     print(" " *(d -(c -1)) ,"*" *(b))
+#     b +=2
+#     c +=1
+#
+# b =a *2 -1
+# b =b +2
+# for q in range(a +1):
+#     print(" " *(c -1) ,"*" *b)
+#     c +=1
+#     b -=2
+
+# a =int(input())
+# b =a *2 -1
+# c =1
+# d =0
+
+#format
+
+# 함수format
+
+# test_str ="hello {}. my nameis {}. I'm {} years old".format("python" ,"tom" ,16)
+# print(test_str)
+
+# %format
+
+# test_str ="hello %s. my nameis %s. I'm %d years old"%.format("python" ,"tom" ,16)
+# print(test_str)
+
+
+
+# f - string
+
+year ="2023"
+month =1
+day =20
+
+test_str =f"welcome to{year}.{month}.{day}!"
+print(test_str)
