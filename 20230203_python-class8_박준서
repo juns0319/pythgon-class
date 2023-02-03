@@ -1,0 +1,166 @@
+#시퀸스 자료형
+#하나의 변수에 여러값을 저장할 수 있는 자료형
+#리스트 ,튜플 ,딕셔너리 ,진합(set)
+
+
+#리스트 ilst, -대괄호
+
+#리스트 생성
+#리스트 이름 = [초기값 ,...]
+#리스트 안에 다양한 자료형을 가진 값을 넣을 수 있다.
+# mylist =[5 ,7 ,2 ,1 ,"ab" ,3.1 ,"a2"]
+# print(mylist)
+#빈 리스트 생성
+# test_list =[]
+#리스트 값 접근
+#lst =[3 ,4 ,5 ,6]
+#print(lst[:3]) #슬라이싱
+
+
+#리스트 값 추가
+#append ,insert ,extend
+
+# lst =[3 ,4 ,5]
+# lst.append(10)
+#값을 리스트 마지막에 추가
+# print(lst)
+
+# lst.insert(1 ,9)
+# print(lst) #두번째 값을 첫번째 값 위치에 삽입한다.
+#이때 원래 자리에 있던 값은 뒤로 밀려난다.
+#
+# lst[3 ,4 ,5]
+# lst.extend([5 ,0 ,8]) #시퀸스 자료형 요구
+# print(lst) #두 값이 병합됨
+
+#리스트 값 수정
+# lst =[9 ,0 ,2]
+# lst[1] = 13
+# print(lst)
+
+#리스트값 삭제
+#del ,pop ,remove
+#lst = [1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9]
+# del lst[5] #인덱스로 삭제
+# print(lst)
+
+# print(lst.pop()) #리스트의 맨 마지막 값을 추출
+# print(lst.pop(2)) #인덱스로 추출 가능
+# print(lst)
+
+# lst = [1 ,2 ,3 ,3 ,3 ,3 ,4 , 1, 2, 3]
+# lst.remove(3) #지정된 값 하나 제거
+# print(lst)
+
+#리스트의 특징
+#여러 값을 저장할 수 있다.
+#각 값마다 인덱스를 가진다.
+#여러 다른 자료 형값을 동시에 저장할 수 있다...
+
+
+#튜플 tuple 소괄호
+
+#튜플의 생성
+#tp =(3 ,7 ,9)
+#조건을 만족했을 떄 소괄호는 생략이 가능하다...
+# tp2 =6 ,7 ,2
+# tp3 =10 ,
+
+# tp4 =(12)
+# print(type(tp4)) #정수형으로 인식이 된다
+# print(type(tp3))
+
+#튜플의 값 접근
+# tp =(2 ,3 ,7)
+# print(tp[0])
+# print(tp[:2])
+
+#튜플 값 추가
+#tp =(5 ,1)
+# tp.append(2) #튜플의 값 추가 X
+# tp.insert(1 ,2) #튜플의 값 수정 X
+#tp.exend([1 ,3]) #튜플의 값 삭제 X
+
+#튜플 값 삭제?
+# 일부 삭제 X
+
+#튜플 자체 삭제
+#tp =(3 ,4)
+#del tp
+
+#튜플의 특징
+#생성 ,접근 ,전체 삭제 이외에
+#추가 ,수정 ,일부 삭제 불가능
+
+ #딕셔너리 dict 중괄호
+ #{key값 :value 값}
+#dt ={10: "berry" ,"apple" :0 ,6 :20 ,"by" :"on"}
+
+
+#딕셔너리 값 접근
+#dt ={10: "berry" ,"apple" :0 ,6 :20 ,"by" :"on"}
+#딕셔너리 내부에 존재하는 key값을 넣으면
+#그에 대응하는 value 값이 도출된다
+#print(dt["by"])
+
+#딕셔너리 값 추가
+#dt ={10: "berry" ,"apple" :0 ,6 :20 ,"by" :"on"}
+#dt[67] ="hello"
+#dt["pop"] ="name"
+#해당 딕셔너리 안에 존재하지 않던 key값을 매개로 넣을 경우
+#새로운 key :value로 인식되어 추가된다
+#print(dt)
+
+#딕셔너리 값 수정
+# dt ={10: "berry" ,"apple" :0 ,6 :20 ,"by" :"on"}
+# dt["apple"] ="red" #key값을 넣어 수정
+# print(dt)
+
+#딕셔너리 값 삭제
+# dt ={10: "berry" ,"apple" :0 ,6 :20 ,"by" :"on"}
+# del dt[10] #key 값을 넣어 삭제
+# print(dt)
+
+#딕셔너리 전용 함수
+# dt ={10: "berry" ,"apple" :0 ,6 :20 ,"by" :"on"}
+# print(dt.keys()) #딕셔너리의 key값을 전부 가져오는 함수
+# print(dt.values()) #딕셔너리의 value값을 전부 가져오는 함수
+
+#딕셔너리의 특징
+#key값 :value 값을 한쌍으로 가진다
+#존재하는 key 값을 넣을 경우 그에 대응하는 value값이 도출
+#존재하지 않는 key 값과 value값을 넣을 경우
+#새로운 값으로 인식되어 추가된다
+
+
+#집합 set 중괄호
+
+#집합의 생성
+#st ={}
+#print(type(st)) #dict 자료로 인식
+
+# st ={1 ,32 ,4 ,6 ,2 ,8 ,9}
+# print(st)
+
+#집합의 값 추가
+# st.add(3)
+
+#집합의 값 삭제
+
+# st.remove(32)
+# print(st)
+
+#집합의 특징
+#순서가 없다
+#중복이 허용되지 않음
+
+
+#자료형 형변환
+a =[1 ,2 ,2 ,2 ,3]
+print(tuple(a),type(tuple(a)))
+b =(2 ,6 ,7)
+print(list(b),type(list(b)))
+c ={"10":0 ,"apple" :"red"}
+print(list(c) ,type(list(c))) #key값만 리스트로 변환됨
+
+print(set(a) ,type(set(a)))
