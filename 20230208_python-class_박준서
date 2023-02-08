@@ -1,0 +1,100 @@
+#시퀀스 자료형의 길이를 반환하는 함수
+# lst =[5 ,9 ,8 ,7 ,6]
+# st ="welcome!"
+# st2 ="     "
+# print(len(lst) ,len(st) ,len(st2))
+#
+# for i in range(len(lst)):
+#     print(lst[i])
+
+#in 문법 -시퀀스 자료형
+
+#for와 시퀀스 자료형과의 연계
+
+# lst =[3 ,1 ,5 ,9]
+#
+# for i in lst: #해당 리스트 내에서 값을 하나씩 i에 저장하여 반복 실행
+#     print(i)
+#
+# st ="hello"
+#
+# for i in st: #문자열도 동일하게 적응
+#     print(i)
+
+#if와 시퀀스 연계
+
+# lst =["apple" ,"banana" ,"cinamon"]
+# st ="apple"
+# st2 ="pear"
+#
+# if st in lst:
+#     print("T")
+# else:
+#     print("F")
+# if st2 in lst:
+#     print("T2")
+# else:
+#    print("F2")
+
+#문제1 -정수n을 입력받는다. 반복문과 리스트를 이용하여 n개 만큼의 수를 입력받아 리스트에 저장하는 코드
+# a =int(input())
+# lst =[]
+# for i in range(a):
+#     n =int(input())
+#     lst.append(n)
+# print(lst)
+
+#문제2 -문제1에서 최대 ,최솟값을 찾아 출력하는 코드
+# n =int(input())
+# lst =[]
+# for i in range(n):
+#     a =int(input())
+#     lst.append(a)
+# print(lst)
+# m =0
+# while True:
+#     m +=1
+#     if m in lst:
+#         print("최솟값 :" ,m)
+#         break
+# m =0
+# backup =1
+# while True:
+#     m +=1
+
+
+# a =int(input())
+# lst =[]
+# for i in range(a):
+#     n =int(input())
+#     lst.append(n)
+# print(lst)
+#
+# max_num =lst[0]
+# min_num =lst[0]
+#
+# for i in range(len(lst)):
+#     if max_num >lst[i]:
+#         max_num =lst[i]
+#     if min_num >lst[i]:
+#         min_num =lst[i]
+# print("주어진 리스트에서 최댓값은 %d 입니다." % (max_num))
+# print("주어진 리스트에서 최솟값은 %d입니다." % (min_num))
+#문제3 -입력받은 수인 n번째까지 출력하는 비보나치 수열a =int(input())
+# lst =[]
+# for i in range(a):
+#     n =int(input())
+#     lst.append(n)
+# print(lst)
+# 
+# max_num =lst.pop()
+# min_num =max_num
+# 
+# for i in range (len(lst)):
+#     temp =lst.pop()
+#     if max_num < temp:
+#         max_num =temp
+#     if min_num >temp:
+#         min_num =temp
+# print("주어진 리스트에서 최댓값은 %d 입니다." % (max_num))
+# print("주어진 리스트에서 최솟값은 %d입니다." % (min_num))
