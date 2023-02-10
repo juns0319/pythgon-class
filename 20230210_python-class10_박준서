@@ -1,0 +1,100 @@
+# n =int(input())
+# pibo =[0 ,1]
+#
+# for i in range(n):
+#     a =pibo[0] +pibo[1]
+#     pibo.append(a)
+#     pibo.remove(pibo[0])
+#     print(pibo[0] +pibo[1])
+
+# n =int(input())
+# pibo =[0 ,1]
+#
+# for i in range(n -2):
+#     pibo.append(pibo[i] +pibo[i +1])
+# print(pibo)
+#
+# n =int(input())
+# pibo =[0 ,1]
+#
+# for i in range(1 ,n -1):
+#     pibo.append(pibo[i -1] +pibo[i])
+# print(pibo)
+
+
+#사용자 정의 함수
+
+#함수 생성 방법
+# def 함수 이름():
+#     코드
+#     .
+#     .
+#     .
+
+# def test_func():
+#     print(True)
+#
+#
+# test_func() #함수를 호출(실행)
+
+#매개 변수와 인자
+
+# def test_func2(a): #매개변수
+#     print(a +2)
+#
+# test_func2(10) #인자
+#
+# def test_func3(a,b,c,d):
+#     print(a +b -c *d)
+#
+# test_func3(10 ,2 ,7 ,9)
+
+
+#함수의 값 반환
+#return
+
+
+# def test_func4():
+#     return 100
+#
+#
+# print(test_func4())
+
+#함수 외부와 내부의 영향권
+# def test():
+#     n =12
+#     print(n)
+# n =10
+# test()
+# print(n)
+#
+# def test2(n):
+#     n =12
+#     print(n)
+#     return(n)
+# n =10
+# test2(n)
+# print(n)
+#함수를 이용한 문제
+#계산기
+
+
+#예)
+#입력받은  값 :3 +4
+#더힌깂은 7입니다.
+
+# def test(x ,y):
+#     return x +y
+#
+# a =int(input())
+# b =int(input())
+# print(test(a ,b))
+
+
+a =input()
+b =a[2]
+if b =+:
+    b =a[0] +a[5]
+print(a)
+def test(x ,y):
+    return(x ,y)
