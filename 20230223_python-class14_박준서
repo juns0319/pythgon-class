@@ -1,0 +1,45 @@
+#ASKI 코드(아스키)
+# ord() :문자 ->10진수
+# chr() :10진수 ->문자
+
+# print(ord("/"))
+# print(chr(47))
+
+#1.
+#정수와 문자 하나를 입력받는다
+#   입력받은 문자에서 다음 정수만큼의 문자를 출력한다
+#ex) A 3
+#출력 D
+# a =input()
+# b =int(input())
+# c =a.isupper()
+# safer =ord(a) +b
+# d =0
+# if c ==True:
+#     if ord(a) +b >=90:
+#         d =safer -25
+# elif c ==False:
+#     if ord(a) +b >=122:
+#         d =safer -25
+
+# a =str(input())
+# b =int(input())
+# c =ord(a) +b
+# d = c % 122
+# e = (c - d) / 122
+# if 65 >=c >=90:
+#     print(chr(e -25))
+# elif 97 >=c >=122:
+#     print(chr(e -25))
+# else:
+#     print(chr(c))
+
+#2.
+#만약 z,Z가 넘어갈 경우 다시 A부터
+input_str =input()
+input_int =int(input())
+
+if input_str.islower(): #97 <= input_str <=122
+    print(chr(((ord(input_str) +input_int -ord("a")) %26) +ord("a")))
+else:
+    print(chr(((ord(input_str) + input_int - ord("A")) % 26) + ord("A")))
