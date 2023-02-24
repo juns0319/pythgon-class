@@ -1,4 +1,4 @@
-#재귀 함수(retujrn이용해서 탈출)
+#재귀 함수(return이용해서 탈출)
 
 # def func():
 #     print(10)
