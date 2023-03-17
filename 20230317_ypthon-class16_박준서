@@ -1,0 +1,96 @@
+# ver.1
+# print("hi")
+# a =input().split()
+# print(a)
+# king ,queen ,rooks ,bishop ,knight ,pawn =a
+# print(1 -int(king) ,1 -int(queen) ,2 -int(rooks) ,2 -int(bishop) ,2 -int(knight) ,8 -int(pawn))
+#ver.2
+# print("hi")
+# a =input().split()
+# b =[1 ,1 ,2 ,2 ,2 ,8]
+# for i in range(len(a)):
+#     print(b[i] -int(a[i]) ,end= ' ')
+
+
+# a =int(input())
+#
+# for i in range(1 ,a+1):
+#     print((' ' *(a -i)) +('*' *(2 *i -1)))
+# for j in range(a -1,0 ,-1):
+#     print((' ' *(a -j)) +('*' *(2 *j -1)))
+
+# n,m =input().split()
+# n =int(n)
+# m =int(m)
+# baskets =[]
+# for i in range(1 ,n +1):
+#     baskets.append((i))
+
+
+# for i in range(m):
+#     #i ,j ,k를 입력받고
+#     i ,j ,k =input().split()
+#     i =int(i)-1
+#     j =int(j)-1
+#     k =int(k)-1
+#     #바구니중에서 i부터 j까지의 범위를  [k~j] +[i~k-1]
+#     a =baskets[k :j +1]
+#     b =baskets[i :k]
+#     baskets[i :j +1] =a +b
+#
+# for b in baskets:
+#     print(b ,end= ' ')
+
+#1.기존 string과 string을 거꾸로 읽은것을 비교하며 같으면 1 아니면 0을 출력하라
+# a =input()
+# if a==a[::-1]:
+#     print("1")
+# else:
+#     print("0")
+#2.가운데 문자를 기준으로 양옆 글자확인
+# a =input()
+# mid =len(a)//2
+# if len(a) %2 ==0:
+#     b =a[:mid]
+#     c =a[mid:]
+# else:
+#     b =a[:mid]
+#     c =a[mid+1:]
+# if b ==c[::-1]:
+#     print(1)
+# else:
+#     print(0)
+
+
+# a =input()
+# safer =a
+# if len(a) >1000000:
+#     quit()
+# else:
+#     a =a.upper()
+#     for i in set(a):
+#         print(a.count())
+
+# string =input()
+# string =string.upper()
+# safer =string
+# b ={}
+# for i in set(string):
+#     print(i, string.count(i))
+#     b[i] =string.count(i)
+# print(b.keys() ,b.values())
+
+string =input()
+string =string.upper()
+alphas =[]
+counts =[]
+for i in set(string):
+    alphas.append(i)
+    counts.append(string.count(i))
+
+maxcount =max(counts)
+if counts.count(maxcount) >1:
+    print("?")
+else:
+    idx =counts.index(maxcount)
+    print(alphas[idx])
