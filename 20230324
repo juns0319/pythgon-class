@@ -1,0 +1,10 @@
+#7
+a =int(input())
+for i in range(a):
+    c =int(input())
+    for j in range(c):
+        d =int(input())
+        d2 =[]
+    final =sum(d) /len(d)
+    final2 =[round(final,3)]
+    print(final2)
