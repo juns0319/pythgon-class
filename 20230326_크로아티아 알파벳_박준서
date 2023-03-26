@@ -1,0 +1,22 @@
+a=input()
+a =list(a)
+b =1
+for i in range(len(a)):
+    if a[b] =="j":
+        if a[b-1] =="l" or a[b-1] =="n":
+            del [a[b] ,a[b-1]]
+            b += 1
+    elif a[b] =="=" and a[b-1] =="z=":
+        del [a[b] ,a[b-1] ,a[b-2]]
+        b += 1
+    elif a[b] =="=":
+        if a[b-1] =="s" or a[b-1] =="z" or a[b-1] =="c":
+            del [a[b] ,a[b-1]]
+            b += 1
+    elif a[b] =="-":
+        if a[b-1] =="c" or a[b-1] =="d":
+            del [a[b] ,a[b-1]]
+            b += 1
+    else:
+        b +=1
+print(len(a))
