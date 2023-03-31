@@ -1,0 +1,99 @@
+# a=input()
+# a =list(a)
+# b = len(a)
+# for i in range(len(a)):
+#     if a[b] =="j":
+#         if a[b-1] =="l" or a[b-1] =="n":
+#
+#             b -= 1
+#     elif a[b] =="=":
+#         if a[b-1] =="s" or a[b-1] =="c":
+#             b -= 1
+#         elif a[b-1] == 'z':
+#             if a[b-2] == 'd':
+#                 b -=1
+#
+#     elif a[b] =="-":
+#         b-= 1
+#     else:
+#         b +=1
+# print(len(a))
+#ljes=njak
+
+#string =input()
+
+#cnt =len(string) #초기 개수는 입력받은 문자열의 개수 전체로 본다.
+
+#크로아티아 알파벳중에 2개 또는 3개짜리로 카운트한 숫자만큼 줄여준다.
+
+# for i in range(len(string)):
+#     if string[i] == '=':
+#         if string[i-1] in ['s' ,'c']:           #s= ,j=0을 두개의 문자로 카운팅 했기에 하나씩 줄여준다.
+#             cnt -=1
+#         elif string[i-1] =='z':            #z=인지 dz=인지 구분하는 과정
+#             if string[i-2] =='d':
+#                 cnt-=2
+#             else:
+#                 cnt-=1
+#     elif string[i] =='-':       #c-,d-을 두개의 문자로 카운팅 했기에 하나씩 줄여준다.
+#         cnt -=1
+#     elif string[i] =='j':
+#         if string[i-1] in ['l' ,'n']:             #nj ,lj를 두개의 문자로 카운팅 했기에 하나씩 줄여준다.
+#             cnt-=1
+# print(cnt)
+
+
+# ObjectOrientedProgramming1 3.0 A+
+# IntroductiontoComputerEngineering 3.0 A+
+# ObjectOrientedProgramming2 3.0 A0
+# CreativeComputerEngineeringDesign 3.0 A+
+# AssemblyLanguage 3.0 A+
+# InternetProgramming 3.0 B0
+# ApplicationProgramminginJava 3.0 A0
+# SystemProgramming 3.0 B0
+# OperatingSystem 3.0 B0
+# WirelessCommunicationsandNetworking 3.0 C+
+# LogicCircuits 3.0 B0
+# DataStructure 4.0 A+
+# MicroprocessorApplication 3.0 B+
+# EmbeddedSoftware 3.0 C0
+# ComputerSecurity 3.0 D+
+# Database 3.0 C+
+# Algorithm 3.0 B0
+# CapstoneDesigninCSE 3.0 B+
+# CompilerDesign 3.0 D0
+# ProblemSolving 4.0 P
+#전공평점을 출력하라
+#전공평점 :전공과목별 (학점 x 과목평점)의 합을 학점의 총합으로 나눈값
+# 전공과목별합=0
+# 학점의총합=0
+# 과목평점 ={'A+' :4.5 ,'A0' :4.0 ,'B+' :3.5 ,'B0' :3.0 ,'C+' :2.5 ,'C0' :2.0 ,'D+' :1.5 ,'D0' :1.0 ,'F' :0.0}
+# for _ in range(20):
+#      과목명, 학점, 등급 = input().split()
+#      if 등급 =='P':
+#           continue
+#      학점의총합 +=float(학점)    #학점의총합 =학점의 총합 +학점
+#      전공과목별합 +=float(학점) *과목평점[등급]
+# print(전공과목별합 /학점의총합)
+# n ,m=input().split()
+# A ,B =[] ,[]
+# C =[]
+# n ,m=int(n) ,int(m)
+# for _ in range(n):
+#      x =input().split()
+#      A.append(x)
+# for _ in range(n):
+#      x =input().split()
+#      B.append(x)
+# for x in range(n):
+#      for y in range(m):
+#           print(int(A[x][y]) +int(B[x][y]),end= ' ')
+#      print()
+strings =[]
+count =0
+a =[]
+for _ in range(5):
+     strings.append(input())
+     for 
+y =1
+print(strings[x][y],end= ' ')
