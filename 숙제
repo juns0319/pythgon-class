@@ -1,1 +1,57 @@
 #백준 심화1_7~9번
+# num =int(input())
+# a_lst =[]
+# b_lst =[]
+# c =0
+# average =[]
+# for _ in range(num):
+#     a =int(input())
+#     a_lst.append(a)
+#     for i in range(a):
+#         b =int(input())
+#         b_lst.append(b)
+#
+# for l in range(num):
+#     for j in range(a_lst[l]):
+#         c =0 +a_lst[j]
+#     average.append(c/num)
+# print(average)
+
+
+# a =input()
+# b =0
+# count =0
+# if '=' in a:
+#     if 'z=' in a:
+#         b = a.find('dz=')
+#         a = a[b - 2:b] + a[b + 1:]
+#         count +=1
+#     else:
+#         b =a.find('=')
+#         a = a[b - 1:b] + a[b + 1:]
+#         count +=1
+# elif '-' in a:
+#     b =a.find('-')
+#     a = a[b - 1:b] + a[b + 1:]
+#     count +=1
+# elif 'j' in a:
+#     b =a.find('j')
+#     a =a[b-1:b] +a[b+1:]
+#     count +=1
+# print(count +len(a))
+
+num =int(input())
+fact =0
+count =num
+for _ in range(num):
+    a =input()
+    for i in range(len(a)):
+        if a[i-1] ==a[i]:
+            fact =0
+        else:
+            fact =a[i-1]
+            if a[i] ==fact:
+                count -=1
+print(count)
+
+#아직 완성X
