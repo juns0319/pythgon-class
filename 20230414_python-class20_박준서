@@ -1,0 +1,71 @@
+#백준 심화1_7~9번
+# num =int(input())
+# a_lst =[]
+# b_lst =[]
+# c =0
+# average =[]
+# for _ in range(num):
+#     a =int(input())
+#     a_lst.append(a)
+#     for i in range(a):
+#         b =int(input())
+#         b_lst.append(b)
+#
+# for l in range(num):
+#     for j in range(a_lst[l]):
+#         c =0 +a_lst[j]
+#     average.append(c/num)
+# print(average)
+
+# a =input()  # ljesak
+# b =0
+# count = len(a)
+# for i in range(len(a)): # 0~ 8
+#     if a[i] == '=':
+#         if a[i-1] == 'z':
+#            if a[i-2] == 'd':
+#                count -= 2
+#            else:
+#                count -= 1
+#         else:
+#             count -= 1
+#     elif a[i] == '-':
+#         count -= 1
+#     elif a[i] == 'j':
+#         if a[i-1] in ['l','n']:
+#             count -=1
+# print(count)
+#n j
+
+#항상 똑바로 확인해라 박준서...
+# num =int(input())
+# fact =0
+# count =num
+# for _ in range(num):
+#     a =input()
+#     for i in range(len(a)):
+#         if a[i-1] ==a[i]:
+#             fact =0
+#         else:
+#             fact =a[i-1]
+#             if a[i] ==fact:
+#                 count -=1
+# print(count)
+
+white_paper =[]
+for i in range(100):
+    temp =['a'] *100
+    white_paper.append(temp)
+
+n =int(input())
+for _ in range(n):
+    x,y =input().split()
+    x =int(x)
+    y =int(y)
+    for i in range(10):
+        for j in range(10):
+            white_paper[x +i][y +j] ='b'
+cnt =0
+for i in range(len(white_paper)):
+    cnt +=white_paper[i].count('b')
+print(cnt)
