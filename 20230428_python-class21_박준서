@@ -1,0 +1,48 @@
+#1
+# a,b =input().split() #입력 #A12B 16
+# a =a[::-1] #반전시키기
+# answer =0 #answer값 설정
+# DICT = {} #딕셔너리 생성
+# alphabet ="ABCDEFGHIJKLMNOPQRSTUVWXYZ" #알파벳
+# nums =list(range(10,36))
+# c =dict(zip(alphabet,nums))
+# for j in range(len(alphabet)):
+#     DICT[alphabet[j]] =nums[j]
+#
+#
+# for i in range(len(a)):
+#     if a[i].isalpha():
+#         answer +=DICT[a[i]] *int(b) **i
+#     else:
+#         answer +=int(a[i]) *int(b) **i
+# print(answer) #출력 41259
+#4
+# n =int(input())
+#
+#점의 개수 계산
+# side =(1 +2**n)
+#
+# print(side**2)
+#반복횟수       한변의 점의 개수
+#0회            2개          (2**0 +1)
+#1회            3개          (2**1 +1)
+#2회            5개          (2**2 +10)
+#3회            9개          (2**3 +1)
+#4회            16개         (2**4 +1)
+#n회                         (2**n +1)
+
+
+#5
+n =int(input())
+x =1
+curr =1
+while curr <n:
+    curr +=6*x
+    x +=1
+print(x)
+
+
+
+
+
+#숙제:(일반수학6,7),(약수,배수와 소수[가능한데까지])
