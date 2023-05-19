@@ -1,0 +1,117 @@
+# a =int(input())
+# b =int(input())    #a,b입력받기
+# Primes =[]
+# for i in range(a,b +1):
+#     flag =True
+#     for j in range(2,i):      #2부터 시작
+#         if i %j ==0:      #만약 i에 j를 나누면 나머지는 0이라면
+#             flag =False     #플레그값 False로 변경
+#             break          #탈출
+#     if flag and i != 1:       #만약 flag와 i는 1이 아니라면
+#         Primes.append(i)
+# if len(Primes) != 0:       #만약 Primes의 길이가 0이 아니라면
+#     print(sum(Primes))   #Primes를 집합으로 출력
+#     print(Primes[0])     #Primes의 0번째를 출력
+# else:
+#     print(-1)    #아니라면 -1출력
+
+# n =int(input())    #소인수분해할 수
+#n : 72
+# x =2
+# while n != 1:      #n이 1이 아닐때까지
+#     if n %x ==0:   #만약 n과 x의 나머지는 0이라면
+#         n //= x
+#         print(x)
+#     else:
+#         x +=1
+
+# a =int(input())
+# b =int(input())
+# print(a *b)
+
+
+# lst =[]
+# x,y,w,h =input().split()
+# x =int(x)
+# y =int(y)
+# w =int(w)
+# h =int(h)
+# print(min(w -x ,h -y,x,y))
+# lst.append(abs(w -x))
+# lst.append(abs(h -y))
+
+# x =[]
+# y =[]
+# x1 =0
+# y1 =0
+# for _ in range(3):
+#     x1,y1 =input().split()
+#     x.append(x1) ,y.append(y1)
+# x =[int (i) for i in x]
+# y =[int (i) for i in y]
+# print(x,y)
+# if x[0] ==x[1]:
+#     del x[0]
+#     del x[1]
+# elif x[1] ==x[2]:
+#     del x[1]
+#     del x[2]
+# else:
+#     del x[0]
+#     del x[2]
+# print(x)
+# if y[0] ==y[1]:
+#     del y[0]
+#     del y[1]
+# elif y[1] ==y[2]:
+#     del y[1]
+#     del y[2]
+# else:
+#     del y[0]
+#     del y[2]
+#     print(y)
+# print(x,y)
+
+# point_x =[]
+# point_y =[]
+# for _ in range(3):
+#     x,y =input().split()
+#     point_x.append(int(x))
+#     point_y.append(int(y))
+#
+# return_x =0
+# return_y =0
+# for i in set(point_x):
+#     if point_x.count(i) ==1:
+#         return_x =i
+#     for j in set(point_y):
+#         if point_y.count(i) ==1:
+#             return_y =j
+# print(return_x,return_y)
+
+# n =int(input())
+#
+# print(n *4)
+
+# n =int(input()) #case갯수 지정
+# x =[]
+# y =[]
+
+# for _ in range(n):
+#     x1,y1 =input().split()
+#     x.append(x1) ,y.append(y1)
+# x =[int (i) for i in x] #int로 변환
+# y =[int (i) for i in y]
+# print((max(x) -min(x)) *(max(y) -min(y))) #(x의 최댓값 -x의 최솟값) *(y의 최댓값 -y의 최솟값) 출력
+
+
+t =int(input())
+x1,y1 =10000,-10000
+x2,y2 =10000,-10000
+for _ in range(t):
+    a,b =map(int,input().split())
+    if a <x1:x1 =a
+    if b <y1:y1 =b
+    if a >x2:x2 =a
+    if b >y2:y2 =b
+print(abs(x1 -x2) *abs(y1 -y2))
