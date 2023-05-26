@@ -1,0 +1,103 @@
+# x =int(input())
+# y =int(input())
+# z =int(input())
+# if x ==60 and y ==60 and z ==60:
+#     print("Equilateral")
+# elif x +y +z ==180:
+#     if x ==y:
+#         print("Isosceles")
+#     elif x ==z:
+#         print("Isosceles")
+#     elif y ==z:
+#         print("Isosceles")
+#     elif not x ==y:
+#         print("Scalene")
+#     elif not x ==z:
+#         print("Scalene")
+#     elif not y ==z:
+#         print("Scalene")
+# elif not x +y +z ==180:
+#     print("Error")
+
+# a =int(input())
+# b =int(input())
+# c =int(input())
+# if a +b +c ==180:
+#     if a ==b ==c ==60:
+#         print("Equilateral")
+#     elif a ==b or b ==c or c ==a:
+#         print("Isosceles")
+#     else:
+#         print("Scalene")
+# else:
+#     print("Error")
+
+
+# while True:
+#     x,y,z =input().split()
+#     x =int(x)
+#     y =int(y)
+#     z =int(z)
+#     if x ==0 and y ==0 and z ==0:
+#         quit()
+#     xyzlist =[]
+#     xyzlist.append(x)
+#     xyzlist.append(y)
+#     xyzlist.append(z)
+#     xyzlistmax = int(max(xyzlist))
+#     xyzlist.remove(max(xyzlist))
+#     if x ==y and y ==z:
+#         print("Equilateral")
+#     elif xyzlistmax <(xyzlist[0] +xyzlist[1]):
+#         if xyzlist[0] ==xyzlist[1]:
+#                 print("Isosceles")
+#         elif xyzlistmax ==xyzlist[0]:
+#                 print("Isosceles")
+#         elif xyzlistmax ==xyzlist[1]:
+#                 print("Isosceles")
+#         else:
+#                 print("Scalene")
+#     else:
+#         print("Invalid")
+#
+# a, b ,c =input().split()
+# a =int(a)
+# b =int(b)
+# c =int(c)
+#
+# max1 =max(a ,b ,c)
+# if (a +b +c)-max1 >max1:
+#     print(a +b +c)
+# else:
+#     while (a +b +c)-max1 >max1:
+#         max1 -=1
+# print((a +b +c)-max1)
+
+# a,b,c =input().split()
+# a =int(a)
+# b =int(b)
+# c =int(c)
+# long_side =max(a ,b ,c)
+# short_sides =sum((a,b,c)) -long_side
+#
+# while long_side >=short_sides:
+#     long_side -=1
+# print(long_side +short_sides)
+
+# def mysum(arr:list):
+#     total =0
+#     for i in arr:
+#         total +=i
+#     return total
+
+
+#함수 구현
+#문자열 관련함수
+# mysplit() ,myreplace()
+def mysplit(a):
+    count =0
+    a_list =[]
+    while True:
+        if a[count] ==' ':
+            a_list.append(a[count-1])
+            a.replace(a[:count])
