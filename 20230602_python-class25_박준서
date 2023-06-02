@@ -1,0 +1,86 @@
+#함수 구현
+#문자열 관련함수
+# mysplit() ,myreplace()
+# def mysplit(string, substr =' '):
+#     result =[]                       #result 리스트 생성
+#     temp =""                         #temp(빈문자열) 생성
+#     for i in range(len(string)):
+#         if string[i] != substr:      #만약 string의 i 번째와 substr이 일치하지 않다면 temp에 string의 i번째를 추가한다.
+#             temp +=string[i]
+#         else:                        #아니라면, result에 temp를 추가한다. temp를 빈 문자로 만든다.
+#             result.append(temp)
+#             temp =""
+#     result.append(temp)              #마지막에 있는걸 없애기 위해 result에 temp를 추가한다.
+#     return result                    #result값 반환
+# a ="Hello World"
+# print(mysplit(a,'o'))
+
+#실패(error code)
+
+# def myreplace(a, str1, str2):
+#     n =[]
+#     a =list(a1)
+#     for i in range(len(a),5):
+#         if a[i-len(str1):i] =="Hello":
+#             n.append(i-len(str1))
+#             n.append(i)
+#     #del a[1[n[0]:n[1]]] #del X
+#     #a[n[0]].join(str2) #join을 쓰지 않으려면? ->list로 바꾼다!
+#     a.append(str2)
+#     return a
+#
+# a1 ="Hello World"
+# print(myreplace(a1 ,"Hello", "Hi"))
+
+
+# def myreplace(str ,old ,new):
+#     result =""                  #빈 변수 만들기
+#     for i in range(len(str)):   #str의 길이만큼 반복
+#         if str[i] ==old:        #만약 str의 i번째하고 old변수가 같다면, 실행
+#             result +=new        #result에 new값 추가
+#         else:                   #아니면 실행
+#             result +=str[i]     #result에 str의 i번째를 추가
+#     return result               #result값 반환
+# a ="Hello World"
+# print(myreplace(a,'o','O'))
+
+
+# def myreplace(string, old, new):
+#     l =len(old)
+#     result =""
+#     i =0
+#     #len(string)-1을 한 이유?
+#     #->
+#     while i<len(string)-l:
+#         if string[i:i+l] ==old:
+#             result +=new
+#             i +=l -1
+#         else:
+#             result +=string[i]
+#         i +=1
+#         result +=string[-l:]
+#         return result
+
+
+#영어가 싫은 머쓱이는 영어로 표기되어있는 숫자를 수로 바꾸려고 합니다. 문자열 numbers가 매개변수로 주어질 때, numbers를 정수로 바꿔 return 하도록 solution 함수를 완성해 주세요.
+# numbers는 소문자로만 구성되어 있습니다.
+# numbers는 "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" 들이 공백 없이 조합되어 있습니다.
+# 1 ≤ numbers의 길이 ≤ 50
+# "zero"는 numbers의 맨 앞에 올 수 없습니다.
+
+# def solution(numbers):
+#     DICT ={"one":1, "two":2, "three":3, "four":4, "five":5, "six":6, "seven":7, "eight":8, "nine":9}
+#     for i in DICT:
+#         if i in numbers:
+#             numbers =numbers.replace(i,str(DICT[i]))
+#         return int(numbers)
+# numbers =solution("onetwothreefourfivesixseveneightnine")
+
+def solution(numbers):
+    a =["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+    for i in range(len(a)):
+        numbers =numbers.replace(a[i], str[i])
+    return int(numbers)
+    
+    
+외계어 사전,삼각형의 완선조건(2),구슬을 나누는 경우의 수,문자열 계산하기, 잘라서 배열로 
