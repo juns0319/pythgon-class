@@ -1,0 +1,32 @@
+#1
+# a =input()
+# b =[]
+# while not b =='x':
+#     b.append(input())
+#
+# if a in b:
+
+#2
+# a =int(input())
+# b =int(input())
+# max_ =max(a,b)
+# min_ =min(a,b)
+# d =0
+# d1 =0
+# count =0
+# while True:
+#     if max_ <(min_ +d):
+#         count +=1
+#     else:
+#         d +=1
+# d1 =d
+# d =0
+# while (d <max_ + min_) <0:
+#     if d <max_ + min_:
+#         count +=1
+#     else:
+#         d +=1
+# print(d +d1)
+a =[]
+a.append(input().split())
+print(a)
