@@ -1,0 +1,44 @@
+def solution(array):
+#     arrey_dict ={}
+    array =sorted(array)
+#     a =arrey[0]
+#     set_A =set(array)
+#     for j in set_A:
+#         i =0
+#         while a ==array[i]:
+#             i +=1
+#     #dict를 통해 {j:i}
+#
+#
+#     return answer
+
+#return값 :가장 많이 쓴 값(최빈값) or -1
+#최빈값이 하나면 최빈값을 두개 이상이면 -1 return
+#sort()로 정렬, count()로 개수세기
+#제일 많이 나온값 :최빈값
+#각 수별로 몇번씩 나왔는지 구한다.
+
+
+    DICT ={}     #{1: 2 }
+    for i in array:
+        if i not in DICT:
+            DICT[i] =1
+        else:
+            DICT[i] +=1
+    values =list(DICT.values())
+    maxcnt =max(values)
+    if values.count(maxcnt) >=2:
+        return -1
+    else: # {1: 1, 2: 1, 3: 3, 4: 1} =>((1,1),(2,1),(3,3),(4,1))
+        for k,v in DICT.items():
+            if v ==maxcnt:
+                return k
+
+
+a1 =[1, 2, 3, 3, 3, 4]
+a2 =[1, 1, 2, 2]
+print(solution(a1))
+print(solution(a2))
+
+
+#2의 영역, 문자 개수 재기, 리스트 자르기, 문자열 묶기, qr code
