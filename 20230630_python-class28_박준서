@@ -30,7 +30,7 @@ answer1 =[]
 count =0
 chance =10
 
-guess =input().split(",")
+guess =input().split(",")   #map함수 활용으로 편하게 변환 가능 예:a =(map(int,input().split()))
 guess =[int (i) for i in guess]
 for i in range(3):
     for j in range(3):
