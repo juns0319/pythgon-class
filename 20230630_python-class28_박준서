@@ -1,0 +1,47 @@
+# def solution(arr, k):
+#     # arr =set(arr)
+#     print(type(arr))
+#     for u in range(len(arr)):
+#         keep =arr[k]
+#         if arr[k] ==keep:
+#             del arr[k]
+#     answer = []
+#     if len(arr) < k:
+#         for i in range(len(arr)):
+#             answer.append(arr[i])
+#         for _ in range(k - len(arr)):
+#             answer.append(-1)
+#     else:
+#         for j in range(k):
+#             answer.append(arr[j])
+#
+#     return answer
+#
+# arr =[0, 1, 1, 2, 2, 3]
+# k =3
+
+# answer =[1,3,5]
+# print(answer)
+# input()
+# try_count =10
+
+answer =[1,3,5]
+answer1 =[]
+count =0
+chance =10
+
+guess =input().split(",")
+guess =[int (i) for i in guess]
+for i in range(3):
+    for j in range(3):
+        if answer[i] ==guess[j]:
+            if i ==j:
+                answer1.append("strike")
+                break
+            else:
+                answer1.append("ball")
+                break
+        else:
+            answer1.append("foul")
+            break
+print(answer1)
