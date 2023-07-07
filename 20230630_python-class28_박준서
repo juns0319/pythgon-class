@@ -45,4 +45,3 @@ for i in range(3):
             answer1.append("foul")
             break
 print(answer1)
-그림확대,왼쪽 오른쪽,문자열 겹쳐쓰기
