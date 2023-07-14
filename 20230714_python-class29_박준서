@@ -1,0 +1,64 @@
+# a =[10,6,2,7,3]
+# b =[]
+# b +=a[::-1]
+# # for i in a[::-1]:
+# #
+# print(b)   #[3,7,2,6,10]
+# print(a)
+
+
+# a,b =map(int,input().split())
+# a,b =input().split()
+# a =int(a)
+# b =int(b)
+# apartment =0
+# apartment_list =[[0*b]]*a
+
+
+# if not a <=20 or not b <=6:
+#     quit()
+#
+# for i in range(a):
+#     apartment +=100
+#     for j in range(b):
+#         apartment +=1
+#         apartment_list[i][j] =apartment
+#     apartment = apartment - b
+# print(apartment_list)
+
+# a,b =map(int,input().split())
+# apartment =[]
+
+#
+# for 층 in range(1,a+1):
+#     temp = []
+#     for 호 in range(1,b+1):
+#         호수 =층 *100 +호
+#         호수 =str(호수) +'호'
+#         temp.append(호수)
+#     apartment.append(temp)
+#
+# print(apartment)
+
+
+# a =[1,2,3,4,5,6,7,8,9]
+# n =int(input())
+# a1 =[]
+#
+# for i in range(9):
+#     a1.append(a[i-n])
+#     print(a1)
+
+# for i in range(9):
+#     if i+n <=9:
+#         a1.append(a[i+n])
+#     else:
+#         a1.append()
+
+
+a =[1,2,3,4,5,6,7,8,9]
+n =int(input())
+n =n%9
+a =a[n:] +a[:n]
+# a =a[n%len(a):] +a[:n]
+print(a)
