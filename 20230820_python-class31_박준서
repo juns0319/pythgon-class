@@ -1,0 +1,45 @@
+# def solution(numbers):
+#     list1 =[]
+#     for e in range(10):
+#         list1.append(e)
+#     result =[]
+#     for i in range(len(numbers)):
+#         del list1[list1.index(numbers[i])]
+#     for j in range(len(list1)):
+#         result.append(list1[j])
+#     return sum(result)
+# numbers =[1,0,4,5,6,2]
+# print(solution(numbers))
+#3,7,8,9 =27
+#correct
+
+
+# def solution(num_list):
+#     odd =[]
+#     even =[]
+#     for i in range(len(num_list)):
+#         if i %2 ==0:
+#             even.append(num_list[i])
+#         else:
+#             odd.append(num_list[i])
+#     return max(sum(odd),sum(even))
+#
+# num_list =[-1,2,5,6,3] #4,2,6,1,7,6 =17 #-1,2,5,6,3 =8
+# print(solution(num_list))
+#correct
+
+
+def solution(d,budget):
+    d.sort()
+    answer =0
+    for i in range(len(d)):
+        if (budget -d[i]) >=0:
+            budget -=d[i]
+        else:
+            answer =i -1
+    return answer
+d =[2,2,3,3]
+budget =10
+print(solution(d,budget))
+#wrong
+#마무리 숙제
