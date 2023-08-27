@@ -1,0 +1,70 @@
+# def solution(k, score):
+#     answer =[]
+#     answer2 =[]
+#     for i in score:
+#         if len(answer2) <k:
+#             answer2.append(i)
+#         else:
+#             if min(answer2) < i:
+#                 answer2.remove(min(answer2))
+#                 answer2.append(i)
+#         answer.append(min(answer2))
+#     return answer
+#
+# print(solution(3,[10, 100, 20, 150, 1, 100, 200]))
+
+
+# from itertools import *
+# def solution(number):
+#     answer =0
+#     printlist =list(permutations(number, 3))
+#     for i in range(len(printlist)):
+#         if sum(printlist[i]) ==0:
+#             answer +=1
+#     return answer//6
+#
+# print(solution([-1, 1, -1, 1]))
+
+
+# def solution(lottos, win_nums):
+#     answer1 =0
+#     answer2 =0
+#     for i in range(6):
+#         if lottos[i] in win_nums:
+#             answer1 +=1
+#     for j in range(6):
+#         if lottos[j] ==0:
+#             answer2 +=1
+#     answer =[answer1, answer1 +answer2]
+#     return answer
+
+def solution2(lotto_num):
+    if lotto_num == 6:
+        return 1
+    elif lotto_num == 5:
+        return 2
+    elif lotto_num == 4:
+        return 3
+    elif lotto_num == 3:
+        return 4
+    elif lotto_num == 2:
+        return 5
+    else:
+        return 6
+
+
+def solution1(lottos, win_nums):
+    answer1 = 0
+    answer2 = 0
+    for i in lottos:
+        if i in win_nums:
+            answer1 += 1
+        if i == 0:
+            answer2 += 1
+    answer = [answer1 + answer2, answer1]
+
+    return answer
+
+# [44, 1, 0, 0, 31, 25]
+# [31, 10, 45, 1, 6, 19]
+#https://school.programmers.co.kr/learn/courses/30/lessons/77484
