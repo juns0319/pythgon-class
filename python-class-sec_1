@@ -49,3 +49,29 @@ print(" \\(__)|")
 """
 
 #입출력과 사칙연산 (나머지,곱셈,개) !숙제
+"""
+A ,B ,C =map(int,input().split())
+print((A+B)%C)
+print(((A%C) + (B%C))%C)
+print((A*B)%C)
+print(((A%C) * (B%C))%C)
+
+A=int(input())
+B=int(input())
+Bb=list(map(int,str(B)))
+print(Bb[2]*A)
+print(Bb[1]*A)
+print(Bb[0]*A)
+print(A*B)
+"""
+# |\_/|
+# |q p|   /}
+# ( 0 )"""\
+# |"^"`    |
+# ||_/=\\__|
+
+print("|\\_/|")
+print("|q p|   /}")
+print("( \0 )\"\"\"\\")
+print("|\"^\"`    |")
+print("||_/=\\\\__|")
