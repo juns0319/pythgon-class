@@ -156,12 +156,13 @@ print((korean >49) and (english >49)and(mathematics >49) and(science >49))
 
 t1 =tuple(range(-5, 13, 3))
 num =0
-if t1[num] <=0
-  list(t1)
-  del t1[num]
-  tuple(t1)
-elif t1[num] >=0
-  num +=1
+
+while num <=0:
+  if t1[num] <=0:
+    t1 =list(t1)
+    del t1[num]
+    tuple(t1)
+  elif t1[num] >=0:
+    num +=1
 
 print(t1)
-  
