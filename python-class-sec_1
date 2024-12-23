@@ -253,7 +253,20 @@ print(len(x))
 
 #백준 문자열의 문자열 풀어오기!
 
+"""
 n =int(input())
-for i in n
-    s =str(input())
+a =list()
+b =0
+STR = ''
+while b !=n:
+    STR =str(input())
+    a.append(STR)
+    STR =''
+    b +=1
+b =0
+while b !=n:
+    STR =str(a[b])
+    print(STR[0] +STR[-1])
+    b +=1
+"""
 
