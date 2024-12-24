@@ -270,3 +270,69 @@ while b !=n:
     b +=1
 """
 
+
+#bool True, False
+#파이썬 연산자: 논리연산자, 산술연산자, 비교연산자
+
+#슬라이싱하면 다른 객체(리스트, 튜플, 레인지)
+
+
+#딕셔너리(dictionary,사전)
+#a ={'key': 'value', 'key2': 'value2'}
+#키는 같은 값 존재 불가능, 밸류는 가능
+#print(a['key'])
+#중복되는 키는 저장 불가능
+#리스트: 정수, 불, 실수, 문자열, 튜플
+#리스트는 값 변경 불가능
+#리스트, 딕셔너리는 key값으로 사용불가(바뀔 수 있어서)
+
+#메모리 상의 주소가 변경된다(바뀐다)
+#딕셔너리는 dict({},[],())혹은 {}로 생성
+#zip함수 이용
+#key값, vlaue값이 넘치면 무시
+#dict함수 쓸때는key값에 '', ""사용 금지
+#dict이름에 key값
+#a =[1:'one', 2:'two']
+#print(a[1]) 'one'
+#키 미지정 시, 없는 키일시 에러
+#in으로 확인시 key값만 확인 가능
+#.values()를 통해 value값 확인 가능
+#.keys()로 key값 확인가능
+#len으로 key의 숫자 확인가능
+#.items()key하고 value같이 출력
+#{}사용시 :만 가능
+
+"""
+temp =dict({'메로나':1000, '폴라포':1200, '빵빠레':1800})
+temp['죠스바'] =1200
+temp['월드콘'] =1500
+del temp['메로나']
+print(temp)
+"""
+
+"""
+inventory =dict({'메로나':300, '비비빅':400, '죠스바':250})
+inventory['월드콘'] =500
+print(sum(inventory.values()))
+#.update()를 통하여 딕셔너리끼리 더하기 가능
+"""
+
+"""
+keys =("apple", "pear", "peach")
+vals =(300, 250, 400)
+results =dict(zip(keys,vals))
+print(results)
+
+ap =48584
+m =36
+print(ap*m)
+"""
+
+a ={1:'one', 2:'two', 3:'three'}
+b =a
+b[4] ='four'
+
+print(a)
+print(b)
+print(a==b)
+print(a is b)
