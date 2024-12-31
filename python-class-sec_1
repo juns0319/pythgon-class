@@ -332,7 +332,7 @@ a ={1:'one', 2:'two', 3:'three'}
 b =a
 b[4] ='four'
 
-print(a)
-print(b)
-print(a==b)
-print(a is b)
+print(a) #{1:'one', 2:'two', 3:'three'}
+print(b) #{1:'one', 2:'two', 3:'three', 4:'four'}
+print(a==b) #False
+print(a is b) #False
