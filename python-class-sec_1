@@ -336,3 +336,108 @@ print(a) #{1:'one', 2:'two', 3:'three'}
 print(b) #{1:'one', 2:'two', 3:'three', 4:'four'}
 print(a==b) #False
 print(a is b) #False
+
+
+#dict(딕셔너리)
+#자기 자체를 함수로 선언하면 다른 객체가 된다.
+
+# a ={1:'one', 2:'two', 3:'three'}
+# b =a
+# b[4] ='four'
+#
+# print(a) #{1:'one', 2:'two', 3:'three'} -{1:'one', 2:'two', 3:'three', 4:'four'}
+# print(b) #{1:'one', 2:'two', 3:'three', 4:'four'}
+# print(a==b) #False -True
+# print(a is b) #False -True
+
+#논리연산자, 산술연산자, 비교연산자
+
+#set (집합)
+
+#모든 자료를 자료형에 관계없이 넣을 수 있으면 컨테이너 자료형
+#시퀀스 자료형: 값이 연속적인 자료를 담을 수 있다.
+#dict와 set은 인덱스 번호를 가져올 수 없다.
+#요소(element)의 인덱스를 가져올 수 있는가?
+
+#if :들여쓰기 잘하기
+"""
+n =int(input())
+
+if (n%2) ==0:
+    print('짝수')
+else:
+    print('홀수')
+
+n =int(input())
+n1 =n +20
+if n1>=256:
+    print(255)
+else:
+    print(n1)
+
+
+n =int(input())
+n1 =n -20
+if n1 <=256:
+    if n1 <=0:
+        print(0)
+    else:
+        print(n1)
+else:
+    print(255)
+
+
+s =input("현재시간:")
+
+n =int(s[3:]) #스플릿도 가능
+if n ==0:
+    print("정각 입니다.")
+else:
+    print("정각이 아닙니다.")
+
+fruit = ["사과", "포도", "홍시"]
+s =input("좋아하는 과일은? ")
+
+if s in fruit:
+    print("정답입니다.")
+else:
+    print("오답입니다.")
+
+fruit = {"봄" : "딸기", "여름" : "토마토", "가을" : "사과"}
+s =input("좋아하는 과일은? ")
+if s in fruit.values():
+    print("정답입니다.")
+else:
+    print("오답입니다.")
+
+a =input()
+if a.islower():
+    print(a.upper())
+else:
+    print(a.lower())
+
+#위에서 확인한거 다시 확인할 필요 없음
+n =int(input("score: "))
+if 81 <=n <=100:
+    print("A")
+elif 61 <=n <=80:
+    print("B")
+elif 41 <=n <=60:
+    print("C")
+elif 21 <=n <=40:
+    print("D")
+else:
+    print("E")
+"""
+
+money ={"달러":1167, "엔":1.096, "유로":1268, "위안":171}
+s =input("입력: ").split()
+n =int(s[0])
+memory =0
+for i in money:
+    if s[1] == i:
+        n =n*money[i]
+print(n)
+
+#파이썬 300제 129번 문제 숙제
+# .split()
