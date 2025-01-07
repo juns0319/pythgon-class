@@ -441,3 +441,36 @@ print(n)
 
 #파이썬 300제 129번 문제 숙제
 # .split()
+
+
+
+inp1 =input("주민등록번호: ")
+inp1li =[]
+for j in range(len(inp1)):
+    inp1li.append(inp1[j])
+inp2 =inp1li[:]
+n =[2, 3, 4, 5, 6, 7, 8, 9, 2, 3, 4, 5]
+lis =list()
+le =len(inp1li) -1
+for i in range(le):
+    if inp1li[i] == "-":
+        del inp1li[i]
+i =0
+le =len(inp1li) -1
+if len(inp1li) ==13:
+    for i in range(le):
+        lis.append(int(inp1li[i]) *n[i])
+else:
+    quit()
+n =sum(lis)
+print(n)
+print(inp2[len(inp2)-1])
+print(n%11)
+print(11 -(n%11))
+print(11 -(n%11) == inp2[len(inp2)-1])
+if 11 -(n%11) == inp2[len(inp2)-1]:
+    print("유효한 주민등록번호입니다.")
+else:
+    print("유효하지 않은 주민등록번호입니다.")
+
+
